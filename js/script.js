@@ -19,3 +19,4 @@ document.getElementById("promo-img").src =
 function popup(tipo) {
   alert(tipo + " (texto fictício)");
 }
+
