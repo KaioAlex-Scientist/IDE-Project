@@ -40,8 +40,9 @@ body.tema-preto {
   object-fit: cover;
 }
 
+/* Navbar */
 .logo {
-  height: 120px; /* maior que a navbar */
+  height: 150px; /* maior que a navbar */    /* nao mais */
   width: auto;
 }
 
@@ -64,7 +65,7 @@ section {
 }
 
 .navbar {
-  height: 80px;
+  height: 150px;
   overflow: hidden;
 }
 
