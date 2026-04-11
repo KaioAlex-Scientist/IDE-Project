@@ -1,8 +1,8 @@
 <head></head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-darkTheme fixed-top ">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="img/ide.png" alt="Logo" class="logo">
+      <img src="img/navbar/ideLogo.png" alt="Logo" class="logo">
     </a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -14,11 +14,24 @@
         <li class="nav-item"><a class="nav-link" href="#promo">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="#carousel">OFERTAS</a></li>
         <li class="nav-item"><a class="nav-link" href="#jogos">DESTAQUES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#jogos">FAVORITOS</a></li>
       </ul>
 
-      <div class="d-flex align-items-center">
-        <img src="img/login.png" class="nav-img me-3">  
-        <img src="img/tema.png" class="nav-img" onclick="trocarTema()">
+      <div class="d-flex flex-column align-items-center">
+        <div class="d-flex align-items-center justify-content-center">
+          <p style="font-size: 1.1rem; font-weight: 500; color: aliceblue; ">
+            Bem vindo, <span style="color: rgb(138, 63, 218);">Mr Aura</span>!
+          </p>
+        </div>
+        <div class="d-flex gap-3">
+          <img src="img/navbar/carrinho.png" class="nav-icon">
+          <img src="img/navbar/favoritos.png" class="nav-icon">
+          <img id="botao-tema" src="img/navbar/lightTheme.png" class="nav-icon" onclick="trocarTema()">
+        </div>
+      </div>
+      <div class="profile-container ms-5">
+        <img src="img/navbar/moldura.png" class="moldura">
+        <img src="img/navbar/profilePic.png" class="prof-picture">
       </div>
     </div>
   </div>

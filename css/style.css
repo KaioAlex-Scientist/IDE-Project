@@ -44,20 +44,46 @@ body.tema-preto {
 .logo {
   height: 150px; /* maior que a navbar */    /* nao mais */
   width: auto;
-}
-
-.nav-img {
-  height: 40px;
-  cursor: pointer;
   transition: transform 0.2s;
 }
+.logo:hover {
+  transform: scale(1.1) rotate(4deg);
+}
 
-.nav-img:hover {
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.moldura {
+  display: block;
+  width: 110px;
+}
+
+.prof-picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.nav-icon {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.3s ease;;
+}
+
+.nav-icon:hover {
   transform: scale(1.1);
 }
 
+body.tema-roxo #botao-tema {
+  transform: rotate(120deg);
+}
+
 .navbar-nav .nav-item {
-  margin: 0 15px;
+  margin: 40px;
 }
 
 section {
@@ -65,17 +91,23 @@ section {
 }
 
 .navbar {
-  height: 150px;
+  height: 140px;
   overflow: hidden;
+}
+
+.navbar-darkTheme {
+  background-color: #171a21;
 }
 
 .navbar-nav .nav-link {
   transition: all 0.2s ease;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 550;
+  color: aliceblue;
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgb(186, 126, 250) !important; /* roxo */
+  color: rgb(119,38,189) !important; /* roxo */
   text-decoration: underline;
 }
