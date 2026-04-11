@@ -29,3 +29,17 @@ document.getElementById("promo-img").src =
 function popup(tipo) {
   alert(tipo + " (texto fictício)");
 }
+
+function girarLogo() {
+  const logo = document.querySelector('.logo_02');
+  logo.classList.toggle('girando');
+}
+
+// Fiz essa funçãozinha para carregar/fetch os componentes de uma outra pasta, assim fica 
+// mais fácil implementarmos em conjunto, coloquem seus componentes aqui! :P   -Pedro
+async function carregarComponentes() {
+  document.getElementById("navbar").innerHTML =
+    await fetch("components/navbar.html").then(r => r.text());
+}
+carregarComponentes();
+
