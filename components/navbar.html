@@ -2,15 +2,20 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-darkTheme fixed-top ">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="img/navbar/ideLogo.png" alt="Logo" class="logo">
+      <img src="img/navbar/ideLogo.png" alt="Logo" class="logo d-inline-block">
     </a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Trecho "Hamburguer", que aparece quando a navbar é menor que X pixels -->
+    <div >
+      <img class="nav-icon navbar-toggler me-3" id="botao-carrinho" src="img/navbar/carrinho.png">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav mx-auto">
+
+    <div class="collapse navbar-collapse">
+      <ul class="collapse navbar-collapse navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#promo">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="#carousel">OFERTAS</a></li>
         <li class="nav-item"><a class="nav-link" href="#jogos">DESTAQUES</a></li>
@@ -24,8 +29,8 @@
           </p>
         </div>
         <div class="d-flex gap-3">
-          <img id="botao-carrinho"src="img/navbar/carrinho.png" class="nav-icon">
-          <img id="botao-favoritos"src="img/navbar/favoritos.png" class="nav-icon">
+          <img id="botao-carrinho" src="img/navbar/carrinho.png" class="nav-icon">
+          <img id="botao-favoritos" src="img/navbar/favoritos.png" class="nav-icon">
           <img id="botao-tema" src="img/navbar/lightTheme.png" class="nav-icon" onclick="trocarTema()">
         </div>
       </div>

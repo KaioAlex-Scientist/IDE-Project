@@ -42,7 +42,7 @@ body.tema-preto {
 
 /* Navbar */
 .logo {
-  height: 150px; /* maior que a navbar */    /* nao mais */
+  height: clamp(100px, 10vw, 140px); /* maior que a navbar */    /* nao mais */
   width: auto;
   transition: transform 0.2s;
 }
@@ -89,7 +89,7 @@ body.tema-roxo #botao-tema {
   filter: brightness(0) saturate(100%) invert(85%) sepia(60%) saturate(500%) hue-rotate(10deg);
 }
 #botao-tema:hover {
-  filter: brightness(40) saturate(100%) invert(65%) sepia(40%) saturate(800%) hue-rotate(250deg);
+  filter: brightness(70) saturate(100%) invert(70%) sepia(40%) saturate(800%) hue-rotate(250deg);
 }
 
 .navbar-nav .nav-item {
@@ -101,7 +101,7 @@ section {
 }
 
 .navbar {
-  height: 140px;
+  height: clamp(100px, 15vw, 140px);;
   overflow: hidden;
 }
 
