@@ -1,19 +1,3 @@
-// Trocar tema
-function trocarTema() {
-  
-
-  document.body.classList.toggle("tema-roxo");
-  document.body.classList.toggle("tema-preto");
-
-  const body = document.body;
-  const btn = document.getElementById("botao-tema");
-  if (body.classList.contains("tema-preto")) {
-    btn.src = "img/navbar/darkTheme.png";
-  } else {
-    btn.src = "img/navbar/lightTheme.png";
-  }
-}
-
 // Promo aleatória
 const imagens = [
   "img/promo1.jpg",
@@ -30,16 +14,18 @@ function popup(tipo) {
   alert(tipo + " (texto fictício)");
 }
 
-function girarLogo() {
-  const logo = document.querySelector('.logo_02');
-  logo.classList.toggle('girando');
-}
-
 // Fiz essa funçãozinha para carregar/fetch os componentes de uma outra pasta, assim fica 
 // mais fácil implementarmos em conjunto, coloquem seus componentes aqui! :P   -Pedro
+async function carregarComponente(id, caminho) {
+  const el = document.getElementById(id);
+  const html = await fetch(caminho).then(r => r.text());
+  el.innerHTML = html;
+}
 async function carregarComponentes() {
-  document.getElementById("navbar").innerHTML =
-    await fetch("components/navbar.html").then(r => r.text());
+  await carregarComponente("carousel-id", "components/carousel.html");
+  await carregarComponente("navbar", "components/navbar.html");
+  /* tive que transformar o js do carousel em função pois ele estava iniciando antes do html ser fetch - Perdo */
+  iniciarCarousel();
 }
 carregarComponentes();
 

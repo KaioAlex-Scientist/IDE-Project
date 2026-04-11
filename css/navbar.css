@@ -1,0 +1,141 @@
+/* Navbar */
+.logo {
+  width: auto;
+  transition: transform 0.2s;
+}
+.logo-container {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+.logo_01 {
+  height: clamp(0px, 14vw, 107px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.logo_02 {
+  height: clamp(0px, 14vw, 107px);
+  display: block;
+  position: relative;
+  top:-5px;
+  left:70px;
+  width: 100%;
+  transition: transform 0.6s ease;
+}
+.logo_02.girando {
+  transform: rotate(360deg);
+  display: block;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.moldura {
+  display: block;
+  width: 110px;
+}
+
+.prof-picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.nav-icon {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.nav-icon:hover {
+  transform: scale(1.25);
+}
+
+body.tema-roxo #botao-tema {
+  transform: rotate(120deg);
+}
+
+#botao-carrinho:hover {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(90%) saturate(700%) hue-rotate(180deg);
+}
+#botao-favoritos:hover {
+  filter: brightness(100) saturate(100%) invert(40%) sepia(60%) saturate(700%) hue-rotate(-30deg);
+}
+#botao-tema{
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#botao-tema:hover {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(60%) saturate(500%) hue-rotate(10deg);
+}
+
+
+
+section {
+  margin-top: 80px;
+}
+
+.navbar {
+  height: clamp(100px, 15vw, 140px);
+  overflow: hidden;
+}
+.navbar-nav{
+  justify-content: space-around;
+  width: 40%;
+}
+
+.navbar-nav .nav-item {
+  margin: 5px;
+}
+
+.navbar-darkTheme {
+  background-color: #171a21;
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.2s ease;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 550;
+  color: aliceblue;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Isso aqui ficou fera, viu*/
+
+/* criando uma barra roxa de width 0 embaixo do txt */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: rgb(119,38,189);
+  transition: width 0.3s ease;
+}
+/* expandindo a barra pra 100% tamanho do texto */
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(119,38,189);
+}

@@ -1,5 +1,5 @@
 // Carousel
-
+function iniciarCarousel() {
 const imagensCarousel = [
    {
     src: "img/carousel/jogo1.jpg",
@@ -129,3 +129,4 @@ carousel.addEventListener("slid.bs.carousel", (event) => {
 
 // Inicializa com o primeiro
 atualizarCard(0);
+}
