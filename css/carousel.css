@@ -1,0 +1,118 @@
+/*Carousel*/
+#carouselExample {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 60vh;
+  min-height: 250px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: purple;
+}
+
+.carousel-indicators {
+  position: static;
+  margin-top: 15px;
+}
+
+
+/*Card à direita*/
+
+.info-jogo {
+
+  background-image: url("../img/carousel/cardCarousel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  height: 91.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 10px;
+  color: white;
+}
+
+.row.align-items-center {
+  align-items: stretch !important;
+}
+
+.preco-original {
+  color: white;
+  font-weight: bold;
+
+  margin-top: 0;
+}
+
+.preco-final {
+  color: black; 
+  font-weight: bold;
+
+  margin-bottom: 5px;
+  margin-top: 80px;
+}
+
+/* Quadrado do desconto*/
+.desconto-badge {
+  position: absolute;
+  top: 30px;
+  right: 0;
+
+  transform: translate(30%, -50%); /* joga metade pra fora */
+
+  background-image: url("../img/carousel/desconto.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 130px;   /* ajusta conforme tua imagem */
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  color: white;
+
+}
+
+.desconto-badge::after {
+  content: "OFF";
+  margin-left: 5px;
+  font-size: 0.8em;
+}   
+
+
+/* Quadrados com as categorias no card */
+.categoria-item {
+  background-image: url("../img/carousel/categoriaCarousel.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: black;
+  font-weight: bold;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  text-align: center;
+
+}
