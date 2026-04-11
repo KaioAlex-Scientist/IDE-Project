@@ -82,6 +82,16 @@ body.tema-roxo #botao-tema {
   transform: rotate(120deg);
 }
 
+#botao-carrinho:hover {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(90%) saturate(700%) hue-rotate(180deg);
+}
+#botao-favoritos:hover {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(60%) saturate(500%) hue-rotate(10deg);
+}
+#botao-tema:hover {
+  filter: brightness(40) saturate(100%) invert(65%) sepia(40%) saturate(800%) hue-rotate(250deg);
+}
+
 .navbar-nav .nav-item {
   margin: 40px;
 }
