@@ -11,6 +11,7 @@
 
 
   <link rel="stylesheet" href="css/carousel.css">
+   <link rel="stylesheet" href="css/neko.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -115,17 +116,32 @@
   </div>
 </section>
 
-<!-- ================= FORM ================= -->
 <section id="form" class="container mt-5">
-  <h3>Contato</h3>
-  <form>
-    <input class="form-control mb-2" placeholder="Nome">
-    <input class="form-control mb-2" placeholder="Email">
-    <input class="form-control mb-2" placeholder="Jogo">
-    <textarea class="form-control mb-2" placeholder="Deixe a sua avaliação UwU"></textarea>
-    <button class="btn btn-success">Enviar</button>
-  </form>
+  <div class="row align-items-center">
+    
+    <!-- FORM -->
+    <div class="col-md-6 form-bg">
+      <form>
+        <h5>Nome</h5>
+        <input class="form-control mb-3" placeholder="Seu nome">
+        <h5>Email</h5>
+        <input class="form-control mb-3" placeholder="exemplo@gmail.com">
+        <h5>Jogo</h5>
+        <input class="form-control mb-3" placeholder="Nome inteiro do jogo">
+        <h5>Avaliação</h5>
+        <textarea class="form-control mb-2" rows="6" placeholder="Deixe a sua avaliação UwU"></textarea>
+        <button type="button" class="btn btn-roxo">Enviar</button>
+      </form>
+    </div>
+
+    <!-- ================= NEKO ================= -->
+    <div class="col-md-6 text-center">
+      <img src="img/neko.png" class="neko">
+    </div>
+
+  </div>
 </section>
+
 
 <!-- ================= BADGES ================= -->
 <section class="container mt-5 text-center">
@@ -134,10 +150,6 @@
   <button class="btn btn-secondary" onclick="popup('Cookies')">Cookies</button>
 </section>
 
-<!-- ================= NEKO ================= -->
-<section class="text-center mt-5">
-  <img src="img/neko.png" class="neko">
-</section>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
