@@ -8,10 +8,10 @@
 
 .carousel-item img {
   width: 100%;
-  height: 60vh;
+  height: auto;
   min-height: 250px;
-  max-height: 600px;
-  object-fit: cover;
+  max-height: 60vh;
+  object-fit: contain;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -40,17 +40,19 @@
 
   position: relative;
 
-  height: 91.5%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   border-radius: 10px;
-  color: white;
 }
 
 .row.align-items-center {
   align-items: stretch !important;
+}
+
+.row {
+  align-items: stretch;
 }
 
 .preco-original {
@@ -65,7 +67,7 @@
   font-weight: bold;
 
   margin-bottom: 5px;
-  margin-top: 80px;
+  margin-top: auto;
 }
 
 /* Quadrado do desconto*/
@@ -81,8 +83,10 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  width: 130px;   /* ajusta conforme tua imagem */
-  height: 65px;
+  width: clamp(80px, 12vw, 150px);
+  height: auto;
+
+  aspect-ratio: 2 / 1; /* ou ajuste conforme sua imagem */
 
   display: flex;
   align-items: center;
@@ -110,9 +114,19 @@
   color: black;
   font-weight: bold;
 
+  min-height: 45px;
+
   padding: 10px 15px;
   border-radius: 10px;
 
   text-align: center;
 
 }
+
+#categorias {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* espaçamento vertical REAL */
+}
+
