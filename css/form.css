@@ -1,0 +1,24 @@
+
+/* Botao do forms */
+.btn-roxo {
+  background-color: rgb(82, 11, 158);
+  border-color: rgb(67, 0, 138);
+  color: #fff;
+}
+
+.btn-roxo:hover {
+  background-color: rgb(70, 21, 126);
+  border-color: rgb(70, 21, 126);
+}
+/* Botao do forms */
+
+
+.form-bg {
+  background-image: url("../img/forms.png");
+  background-size: cover;        /* cobre toda a área */
+  background-position: center;   /* centraliza */
+  background-repeat: no-repeat;
+
+  padding: 40px; /* espaço interno pra não colar */
+  border-radius: 15px; /* opcional, fica bonito */
+}

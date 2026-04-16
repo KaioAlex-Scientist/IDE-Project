@@ -14,18 +14,3 @@ function popup(tipo) {
   alert(tipo + " (texto fictício)");
 }
 
-// Fiz essa funçãozinha para carregar/fetch os componentes de uma outra pasta, assim fica 
-// mais fácil implementarmos em conjunto, coloquem seus componentes aqui! :P   -Pedro
-async function carregarComponente(id, caminho) {
-  const el = document.getElementById(id);
-  const html = await fetch(caminho).then(r => r.text());
-  el.innerHTML = html;
-}
-async function carregarComponentes() {
-  await carregarComponente("carousel-id", "components/carousel.html");
-  await carregarComponente("navbar", "components/navbar.html");
-  /* tive que transformar o js do carousel em função pois ele estava iniciando antes do html ser fetch - Perdo */
-  iniciarCarousel();
-}
-carregarComponentes();
-
