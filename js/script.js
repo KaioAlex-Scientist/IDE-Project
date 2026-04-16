@@ -24,6 +24,9 @@ async function carregarComponente(id, caminho) {
 async function carregarComponentes() {
   await carregarComponente("carousel-id", "components/carousel.html");
   await carregarComponente("navbar", "components/navbar.html");
+  await carregarComponente("form-id", "components/form.html");
+  await carregarComponente("footer-id", "components/footer.html");
+  await carregarComponente("janelas-id", "components/janelas.html");
   /* tive que transformar o js do carousel em função pois ele estava iniciando antes do html ser fetch - Perdo */
   iniciarCarousel();
 }
