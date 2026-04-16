@@ -110,9 +110,12 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
+  
+  width: clamp(120px, 10vw, 180px);
+  
   color: black;
   font-weight: bold;
+  font-size: clamp(0.7rem, 1vw, 1rem);
 
   min-height: 45px;
 
