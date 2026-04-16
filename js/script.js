@@ -15,8 +15,3 @@ document.getElementById("promo-img").src =
   imagens[Math.floor(Math.random() * imagens.length)];
 
 
-// Popup fake
-function popup(tipo) {
-  alert(tipo + " (texto fictício)");
-}
-
