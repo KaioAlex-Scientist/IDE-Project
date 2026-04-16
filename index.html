@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<!--FONTE-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+
 <body class="tema-roxo">
 
 <!-- ================= HEADER ================= -->
@@ -51,44 +59,192 @@
 
 <!-- ================= CAROUSEL ================= -->
 <section id="carousel" class="container mt-5">
- <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div id="carouselExample" class="carousel slide carousel-fade shadow-lg rounded overflow-hidden" data-bs-ride="carousel" data-bs-interval="4000">
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
     <div class="carousel-inner">
 
       <div class="carousel-item active">
-        <img src="img/jogo1.jpg" class="d-block w-100">
-        <div class="carousel-caption">
-          <h5>Jogo 1</h5>
-          <span class="badge bg-danger">-50%</span>
-          <p>R$ 49,90</p>
+        <img src="img/jogos/buckshotheroe.png" class="d-block w-100 img-carrossel" alt="Buckshot">
+        
+        <div class="overlay-carrossel"></div> <div class="carousel-caption d-flex flex-column align-items-start text-start mb-4">
+          <span class="badge bg-danger mb-2 px-3 py-2 fs-6">-50% OFF</span>
+          <h2 class="titulo-carrossel">Buckshot Roulette</h2>
+          <p class="fs-5 mb-3"><strong class="text-success">R$ 49,90</strong></p>
+          <a href="#" class="btn btn-outline-light px-4 py-2 fw-bold">Ver Oferta UwU</a>
         </div>
       </div>
 
       <div class="carousel-item">
-        <img src="img/jogo2.jpg" class="d-block w-100">
+        <img src="img/jogos/starwarsbattlefrontheroe.png" class="d-block w-100 img-carrossel" alt="Star Wars Battlefront">
+        
+        <div class="overlay-carrossel"></div> <div class="carousel-caption d-flex flex-column align-items-start text-start mb-4">
+          <span class="badge bg-warning text-dark mb-2 px-3 py-2 fs-6">DESTAQUE</span>
+          <h2 class="titulo-carrossel">Star Wars Battlefront</h2>
+          <p class="fs-5 mb-3"><strong class="text-success">R$ 199,90</strong></p>
+          <a href="#" class="btn btn-outline-light px-4 py-2 fw-bold">Garantir Cópia</a>
+        </div>
       </div>
 
     </div>
 
     <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
     </button>
-
     <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
     </button>
   </div>
 </section>
 
 <!-- ================= LISTA DE JOGOS ================= -->
 <section id="jogos" class="container mt-5">
-  <div class="row" id="lista-jogos">
+  <div class="row g-4" id="lista-jogos">
 
-    <div class="col-md-4">
-      <div class="card jogo-card">
-        <img src="img/jogo1.jpg" class="card-img-top">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/PEAK.png" class="card-img-top" alt="Capa do Jogo">
         <div class="card-body">
-          <h5>Jogo A</h5>
+          <h5>PEAK</h5>
           <p>R$ 29,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/GranTurismo4.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>Gran Turismo 4</h5>
+          <p>R$ 39,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/needforspeedprostreet.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>Need For Speed Pro-Street</h5>
+          <p>R$ 49,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/needforspeedunderground2.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>Need For Speed Underground 2</h5>
+          <p>R$ 49,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/bully.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>BULLY: Scholarship Edition</h5>
+          <p>R$ 69,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/destiny.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>Destiny</h5>
+          <p>R$ 79,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/Overwatch.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>Overwatch</h5>
+          <p>R$ 89,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/dragonballbudokaitenkaichi3.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>Dragon Ball Z Budokai Tenkaichi 3</h5>
+          <p>R$ 39,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/forhonor.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>For Honor</h5>
+          <p>R$ 109,90</p>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/gtasanandreas.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>GTA San Andreas</h5>
+          <p>R$ 119,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/transformersfallofcybertron.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>Transformers Fall of Cybertron</h5>
+          <p>R$ 129,90</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
+        <img src="img/jogos/SouthParkAfendaqueAbundaforca.png" class="card-img-top" alt="Capa do Jogo">
+        <div class="card-body">
+          <h5>South Park: The Fractured Butt Whole</h5>
+          <p>R$ 139,90</p>
         </div>
       </div>
     </div>
