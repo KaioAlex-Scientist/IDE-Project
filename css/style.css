@@ -10,6 +10,14 @@ body.tema-preto {
 
 /* Hover nos jogos */
 .jogo-card {
+
+  background-color: #5c0074;
+  color: antiquewhite;
+  border: none;
+
+  font-weight: bold;
+
+
   transition: transform 0.3s;
 }
 
