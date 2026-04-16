@@ -57,4 +57,6 @@ section {
   text-decoration: underline;
 }
 
-
+#promo-img {
+  height: clamp(400px, 100vh, 830px);
+}
