@@ -1,0 +1,43 @@
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #1a0033; /* roxo escuro */
+  color: #fff;
+  padding: 20px 0 40px;
+}
+
+.footer a {
+  color: rgb(186, 126, 250);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+.footer .social a {
+  color: rgb(186, 126, 250);
+  font-size: 1.8rem;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+
+  text-decoration: none;
+}
+
+.footer .social a:hover {
+  color: #fff;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(186, 126, 250, 0.8);
+
+}
+
+
+/* ================= FOOTER ================= */
+
+.modal-content {
+  background-color: #9523ff; /* roxo escuro */
+  color: #fff;
+  border-radius: 15px;
+}
