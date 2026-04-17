@@ -42,6 +42,43 @@ const jogos = [
     desconto: "-33%",
     img: "img/jogos/destiny.png",
     promocao: true
+  },
+ 
+  {
+    nome: "Overwatch",
+    preco: "R$ 89,90",
+    img: "img/jogos/Overwatch.png",
+    promocao: false
+  },
+  {
+    nome: "Dragon Ball Z Budokai Tenkaichi 3",
+    preco: "R$ 39,90",
+    img: "img/jogos/dragonballbudokaitenkaichi3.png",
+    promocao: false
+  },
+  {
+    nome: "For Honor",
+    preco: "R$ 109,90",
+    img: "img/jogos/forhonor.png",
+    promocao: false
+  },
+  {
+    nome: "GTA San Andreas",
+    preco: "R$ 119,90",
+    img: "img/jogos/gtasanandreas.png",
+    promocao: false
+  },
+  {
+    nome: "Transformers Fall of Cybertron",
+    preco: "R$ 129,90",
+    img: "img/jogos/transformersfallofcybertron.png",
+    promocao: false
+  },
+  {
+    nome: "South Park: The Fractured Butt Whole",
+    preco: "R$ 139,90",
+    img: "img/jogos/SouthParkAfendaqueAbundaforca.png",
+    promocao: false
   }
 ];
 

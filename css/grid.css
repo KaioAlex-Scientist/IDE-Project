@@ -1,35 +1,49 @@
+
 .preco-original {
   text-decoration: line-through;
-  color: white;
+  color: rgb(253, 0, 0);
   font-size: 0.9rem;
   margin-bottom: 0;
+  opacity: 0.8;
 }
 
 .preco-final {
-  color: black;
+  color: green;
   font-weight: bold;
   font-size: 1.2rem;
+
 }
 
 .preco-normal {
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-/* Hover nos jogos */
 .jogo-card {
-
-  background-color: #5c0074;
-  color: antiquewhite;
-  border: none;
-
+  justify-content: space-between;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: -0.5px;
   font-weight: bold;
-
-
-  transition: transform 0.3s;
+  background-color: #1e1e2f; /* Fundo escuro sutil */
+  color: #ffffff; /* Texto branco */
+  border: 1px solid #3a3a5a; /* Borda levemente visível */
+  border-radius: 12px; /* Bordas arredondadas */
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito Hover (Levitação e brilho) */
 .jogo-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 10px 25px rgb(134, 84, 187); /* Glow roxo */
+  border-color: #8a2be2;
 }
+
+/* Padroniza a altura das imagens nos cards */
+.jogo-card .card-img-top {
+  display: flexbox;
+  height: 400px;
+  object-fit:fill;
+}
+
