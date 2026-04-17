@@ -27,6 +27,8 @@ async function carregarComponentes() {
   
   /* tive que transformar o js do carousel em função pois ele estava iniciando antes do html ser fetch - Perdo */
   iniciarCarousel();
+
+  initJogos();
 }
 
 carregarComponentes();

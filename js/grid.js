@@ -84,37 +84,47 @@ const jogos = [
 
 // ================= RENDERIZAÇÃO =================
 
-const listaJogos = document.getElementById("lista-jogos");
-
 function renderJogos() {
+  const listaJogos = document.getElementById("lista-jogos");
+
+  //  evita erro se o elemento ainda não existir
+  if (!listaJogos) return;
+
   let html = "";
 
   jogos.forEach(jogo => {
+  html += `
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card jogo-card h-100">
 
-    html += `
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="card jogo-card h-100 position-relative">
+        <img src="${jogo.img}" class="card-img-top">
+
+        <div class="card-body">
+          <h5>${jogo.nome}</h5>
 
           ${jogo.promocao ? `
-            <span class="badge-desconto">${jogo.desconto} OFF</span>
-          ` : ""}
+            <div class="preco-container">
 
-          <img src="${jogo.img}" class="card-img-top">
+            
+              <div class="precos">
+                <p class="preco-final">${jogo.preco}</p>
+                <p class="preco-original">${jogo.precoOriginal}</p>
+              </div>
 
-          <div class="card-body">
-            <h5>${jogo.nome}</h5>
 
-            ${jogo.promocao ? `
-              <p class="preco-final">${jogo.preco}</p>
-              <p class="preco-original">${jogo.precoOriginal}</p>
-            ` : `
-              <p class="preco-normal">${jogo.preco}</p>
-            `}
-          </div>
+              <div class="estrela-desconto">
+                ${jogo.desconto} OFF
+              </div>
 
+            </div>
+          ` : `
+            <p class="preco-normal">${jogo.preco}</p>
+          `}
         </div>
+
       </div>
-    `;
+    </div>
+  `;
   });
 
   listaJogos.innerHTML = html;
@@ -122,4 +132,12 @@ function renderJogos() {
 
 // ================= INICIALIZAÇÃO =================
 
-renderJogos();
+// funciona em páginas normais
+document.addEventListener("DOMContentLoaded", () => {
+  renderJogos();
+});
+
+// função para usar quando carregar componente manualmente
+function initJogos() {
+  renderJogos();
+}
