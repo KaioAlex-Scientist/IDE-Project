@@ -94,7 +94,7 @@ function renderJogos() {
 
   jogos.forEach(jogo => {
   html += `
-    <div class="col-12 col-sm-6 col-lg-3">
+    <div class="jogo-item">
       <div class="card jogo-card h-100">
 
         <img src="${jogo.img}" class="card-img-top">

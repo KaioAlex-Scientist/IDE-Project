@@ -42,7 +42,7 @@
 
   color: white;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 
   text-align: center;
 }
@@ -53,12 +53,16 @@
   font-family: 'Roboto Mono', monospace;
   letter-spacing: -0.5px;
   font-weight: bold;
-  background-color: #1e1e2f; /* Fundo escuro sutil */
+  background-color: #4b2b6e; /* Fundo escuro sutil */
   color: #ffffff; /* Texto branco */
   border: 1px solid #3a3a5a; /* Borda levemente visível */
   border-radius: 12px; /* Bordas arredondadas */
   overflow: hidden; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* Efeito Hover (Levitação e brilho) */
@@ -70,8 +74,17 @@
 
 /* Padroniza a altura das imagens nos cards */
 .jogo-card .card-img-top {
-  display: flexbox;
-  height: 400px;
-  object-fit:fill;
+  width: 100%;
+  object-fit: cover;
+
 }
 
+.grid-jogos {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  
+  max-width: 1200px; /* limita a 4 cards */
+  margin: 0 auto;    /* centraliza */
+}

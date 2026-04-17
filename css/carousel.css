@@ -74,7 +74,7 @@
 .desconto-badge {
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 20px;
 
   transform: translate(30%, -50%); /* joga metade pra fora */
 
