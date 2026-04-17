@@ -1,0 +1,35 @@
+.preco-original {
+  text-decoration: line-through;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.preco-final {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.preco-normal {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Hover nos jogos */
+.jogo-card {
+
+  background-color: #5c0074;
+  color: antiquewhite;
+  border: none;
+
+  font-weight: bold;
+
+
+  transition: transform 0.3s;
+}
+
+.jogo-card:hover {
+  transform: scale(1.05);
+}
