@@ -24,10 +24,6 @@ function trocarTema() {
   }
 }
 
-function trocarTemaMobile() {
-  trocarTema();
-}
-
 function girarLogo() {
   const logo = document.querySelector(".logo_02");
   if (logo) {
