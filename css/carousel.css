@@ -6,6 +6,10 @@
   position: relative;
 }
 
+#carousel {
+  scroll-margin-top: 140px; /* atalho -> ajuste conforme altura da navbar */
+}
+
 .carousel-item img {
   width: 100%;
   height: auto;
