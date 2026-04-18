@@ -8,7 +8,7 @@
 
     <!-- Área visível no mobile -->
     <div class="mobile-actions d-lg-none">
-      <img id="botao-carrinho-mobile" src="img/navbar/carrinho.png" class="nav-icon" alt="Carrinho">
+      <img src="img/navbar/lightTheme.png" id="botao-tema-mobile" class="nav-icon" onclick="trocarTema()" alt="Opções">
 
       <button
         class="navbar-toggler"
@@ -26,7 +26,7 @@
     <!-- Menu colapsável -->
     <div class="collapse navbar-collapse" id="menu">
       
-      <!-- Perfil mobile -->
+      <!-- Per fil mobile -->
       <div class="mobile-profile d-lg-none">
         <div class="mobile-profile-top">
           <div class="profile-container-mobile">
@@ -40,15 +40,18 @@
         </div>
 
         <div class="mobile-shortcuts">
+
           <div class="mobile-shortcut-item">
-            <img src="img/navbar/favoritos.png" class="nav-icon" alt="Avisos">
-            <span>Avisos</span>
+            <img src="img/navbar/carrinho.png" class="nav-icon" id="botao-carrinho">
+            <span>Carrinho</span>
           </div>
 
           <div class="mobile-shortcut-item">
-            <img src="img/navbar/lightTheme.png" id="botao-tema-mobile" class="nav-icon" onclick="trocarTemaMobile()" alt="Opções">
-            <span>Opções</span>
+            <img src="img/navbar/favoritos.png" id="botao-favoritos" class="nav-icon">
+            <span>Favoritos</span>
           </div>
+
+
         </div>
       </div>
 

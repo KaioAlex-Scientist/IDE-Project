@@ -25,6 +25,10 @@
   gap: 10px;
 }
 
+#jogos {
+  scroll-margin-top: 140px; /* atalho -> ajuste conforme altura da navbar */
+}
+
 /* estrela com imagem */
 .estrela-desconto {
   background-image: url("../img/star.png");

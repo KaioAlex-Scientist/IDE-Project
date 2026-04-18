@@ -65,6 +65,12 @@
   transform: scale(1.15);
 }
 
+
+/* Deixa os elementos âncora/seções mais centralizados na navegação */
+[id] {
+    scroll-margin-top: 140px;
+}
+
 #botao-tema,
 #botao-tema-mobile {
   height: 40px;
@@ -88,7 +94,7 @@ body.tema-roxo #botao-tema-mobile {
 
 #botao-tema:hover,
 #botao-tema-mobile:hover {
-  filter: brightness(0) saturate(100%) invert(85%) sepia(60%) saturate(500%) hue-rotate(10deg);
+  filter: brightness(0) saturate(100%) invert(93%) sepia(80%) saturate(400%) hue-rotate(5deg);
 }
 
 section {
@@ -96,13 +102,18 @@ section {
 }
 
 .navbar {
-  min-height: 100px;
+  min-height: 148px;
   background-color: #171a21;
   border-bottom: 1px solid rgb(119, 38, 189);
 }
 
 .navbar-darkTheme {
   background-color: #171a21;
+}
+
+body {
+    position: relative;
+    transition: background-color 0.5s ease;
 }
 
 .navbar-wrap {
