@@ -1,0 +1,139 @@
+/*Carousel*/
+#carouselExample {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+#carousel {
+  scroll-margin-top: 140px; /* atalho -> ajuste conforme altura da navbar */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: purple;
+}
+
+.carousel-indicators {
+  position: static;
+  margin-top: 15px;
+}
+
+
+/*Card à direita*/
+
+.info-jogo {
+
+  background-image: url("../img/carousel/cardCarousel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+}
+
+.row.align-items-center {
+  align-items: stretch !important;
+}
+
+.row {
+  align-items: stretch;
+}
+
+.preco-original {
+  color: white;
+  font-weight: bold;
+
+  margin-top: 0;
+}
+
+.preco-final {
+  color: black; 
+  font-weight: bold;
+
+  margin-bottom: 5px;
+  margin-top: auto;
+}
+
+/* Quadrado do desconto*/
+.desconto-badge {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+
+  transform: translate(30%, -50%); /* joga metade pra fora */
+
+  background-image: url("../img/carousel/desconto.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: clamp(80px, 12vw, 150px);
+  height: auto;
+
+  aspect-ratio: 2 / 1; /* ou ajuste conforme sua imagem */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  color: white;
+
+}
+
+.desconto-badge::after {
+  content: "OFF";
+  margin-left: 5px;
+  font-size: 0.8em;
+}   
+
+
+/* Quadrados com as categorias no card */
+.categoria-item {
+  background-image: url("../img/carousel/categoriaCarousel.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  width: clamp(120px, 10vw, 180px);
+  
+  color: black;
+  font-weight: bold;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+
+  min-height: 45px;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  text-align: center;
+
+}
+
+#categorias {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* espaçamento vertical REAL */
+}
+

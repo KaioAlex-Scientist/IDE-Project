@@ -1,80 +1,11 @@
 body.tema-roxo {
   background-color: #000000;
-  color:  rgb(134, 84, 187);
+  color:  rgb(201, 156, 249);
 }
 
 body.tema-preto {
   background-color: rgb(83, 23, 148);
-  color: #000000;
+  color: antiquewhite;
 }
 
-/* Hover nos jogos */
-.jogo-card {
-  transition: transform 0.3s;
-}
 
-.jogo-card:hover {
-  transform: scale(1.05);
-}
-
-/* Neko */
-.neko {
-  width: 150px;
-  transition: all 0.3s;
-}
-
-.neko:hover {
-  transform: scale(1.3);
-  filter: brightness(1.2);
-}
-
-.carousel {
-  width: 1200px;
-  height: 600px;
-  margin: auto;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.logo {
-  height: 120px; /* maior que a navbar */
-  width: auto;
-}
-
-.nav-img {
-  height: 40px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.nav-img:hover {
-  transform: scale(1.1);
-}
-
-.navbar-nav .nav-item {
-  margin: 0 15px;
-}
-
-section {
-  margin-top: 80px;
-}
-
-.navbar {
-  height: 80px;
-  overflow: hidden;
-}
-
-.navbar-nav .nav-link {
-  transition: all 0.2s ease;
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-
-.navbar-nav .nav-link:hover {
-  color: rgb(186, 126, 250) !important; /* roxo */
-  text-decoration: underline;
-}

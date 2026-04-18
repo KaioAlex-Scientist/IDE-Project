@@ -1,0 +1,89 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-darkTheme fixed-top">
+  <div class="container navbar-wrap">
+    
+    <a class="navbar-brand logo-container logo" href="#" onclick="girarLogo()">
+      <img src="img/navbar/ideLogo_02.png" class="logo_02" alt="Logo IDE texto">
+      <img src="img/navbar/ideLogo_01.png" class="logo_01" alt="Mascote IDE">
+    </a>
+
+    <!-- Área visível no mobile -->
+    <div class="mobile-actions d-lg-none">
+      <img src="img/navbar/lightTheme.png" id="botao-tema-mobile" class="nav-icon" onclick="trocarTema()" alt="Opções">
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Menu colapsável -->
+    <div class="collapse navbar-collapse" id="menu">
+      
+      <!-- Per fil mobile -->
+      <div class="mobile-profile d-lg-none">
+        <div class="mobile-profile-top">
+          <div class="profile-container-mobile">
+            <img src="img/navbar/moldura.png" class="moldura" alt="Moldura do perfil">
+            <img src="img/navbar/profilePic.png" class="prof-picture" alt="Foto de perfil">
+          </div>
+
+          <p class="mobile-welcome">
+            Olá, <span>Fulano</span>!
+          </p>
+        </div>
+
+        <div class="mobile-shortcuts">
+
+          <div class="mobile-shortcut-item">
+            <img src="img/navbar/carrinho.png" class="nav-icon" id="botao-carrinho">
+            <span>Carrinho</span>
+          </div>
+
+          <div class="mobile-shortcut-item">
+            <img src="img/navbar/favoritos.png" id="botao-favoritos" class="nav-icon">
+            <span>Favoritos</span>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Links principais -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#promo">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#carousel">OFERTAS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#jogos">DESTAQUES</a></li>
+      </ul>
+
+      <!-- Área desktop -->
+      <div class="desktop-user d-none d-lg-flex">
+        <div class="d-flex flex-column align-items-center">
+          <div class="d-flex align-items-center justify-content-center">
+            <p class="welcome-text">
+              Bem vindo, <span>Fulano</span>!
+            </p>
+          </div>
+
+          <div class="d-flex gap-3">
+            <img id="botao-carrinho" src="img/navbar/carrinho.png" class="nav-icon" alt="Carrinho">
+            <img id="botao-favoritos" src="img/navbar/favoritos.png" class="nav-icon" alt="Favoritos">
+            <img id="botao-tema" src="img/navbar/lightTheme.png" onclick="trocarTema()" alt="Trocar tema">
+          </div>
+        </div>
+
+        <div class="profile-container ms-4">
+          <img src="img/navbar/moldura.png" class="moldura" alt="Moldura do perfil">
+          <img src="img/navbar/profilePic.png" class="prof-picture" alt="Foto de perfil">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
