@@ -12,7 +12,7 @@ const jogos = [
     preco: "R$ 39,90",
     precoOriginal: "R$ 79,90",
     desconto: "-50%",
-    img: "img/jogos/GranTurismo4.png",
+    img: "img/jogos/granturismo4.png",
     promocao: true
   },
   {
