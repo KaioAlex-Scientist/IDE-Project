@@ -120,6 +120,12 @@ function renderJogos() {
           ` : `
             <p class="preco-normal">${jogo.preco}</p>
           `}
+              <img 
+                  src="img/navbar/coracaoVazio.png" 
+                  class="nav-icon botao-favorito-grid" 
+                  data-favoritado="false"
+                  onclick="toggleFavorito(this, '${jogo.nome}')"
+              >
         </div>
 
       </div>

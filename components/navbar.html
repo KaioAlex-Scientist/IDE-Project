@@ -35,7 +35,7 @@
           </div>
 
           <p class="mobile-welcome">
-            Olá, <span>Fulano</span>!
+            Olá, <span>Deus_Gamer</span>!
           </p>
         </div>
 
@@ -47,7 +47,10 @@
           </div>
 
           <div class="mobile-shortcut-item">
-            <img src="img/navbar/favoritos.png" id="botao-favoritos" class="nav-icon">
+            <div class="favorito-wrapper">
+                <img id="botao-favoritos" src="img/navbar/coracaoVazio.png" class="nav-icon" alt="Favoritos" onclick="toggleBadge(this)">
+                <span class="favorito-badge" id="favorito-badge"></span>
+            </div>
             <span>Favoritos</span>
           </div>
 
@@ -72,9 +75,12 @@
           </div>
 
           <div class="d-flex gap-3">
-            <img id="botao-carrinho" src="img/navbar/carrinho.png" class="nav-icon" alt="Carrinho">
-            <img id="botao-favoritos" src="img/navbar/favoritos.png" class="nav-icon" alt="Favoritos">
-            <img id="botao-tema" src="img/navbar/lightTheme.png" onclick="trocarTema()" alt="Trocar tema">
+            <img id="botao-carrinho" src="img/navbar/carrinho.png" class="nav-icon" alt="Carrinho" onclick="animarCarrinho()">
+            <div class="favorito-wrapper">
+                <img id="botao-favoritos" src="img/navbar/coracaoVazio.png" class="nav-icon" alt="Favoritos" onclick="toggleBadge(this)">
+                <span class="favorito-badge" id="favorito-badge"></span>
+            </div>
+            <img id="botao-tema" src="img/navbar/lightTheme.png" onclick="trocarTema()" class="nav-icon" alt="Trocar tema">
           </div>
         </div>
 

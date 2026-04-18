@@ -89,6 +89,26 @@
   margin: 0 auto;    /* centraliza */
 }
 
+/* ================= Botão Favorito ================= */
+.botao-favorito-grid {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: auto;
+    opacity: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.jogo-card:hover .botao-favorito-grid {
+    opacity: 0.6;
+}
+
+.botao-favorito-grid:hover {
+    transform: scale(1.2);
+}
+
 /* ================= TEMA ROXO (ESCUDO/PADRÃO) ================= */
 body.tema-roxo .jogo-card {
   background-color: #312041; 
